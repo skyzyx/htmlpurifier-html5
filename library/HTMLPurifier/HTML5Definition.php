@@ -72,12 +72,16 @@ class HTMLPurifier_HTML5Definition
         $def->addElement('picture', 'Block', new HTMLPurifier_ChildDef_Picture(), 'Common');
 
         // http://developers.whatwg.org/text-level-semantics.html
+        $def->addElement('bdi', 'Inline', 'Inline', 'Common');
+        $def->addElement('bdo', 'Inline', 'Inline', 'Common');
         $def->addElement('s', 'Inline', 'Inline', 'Common');
         $def->addElement('var', 'Inline', 'Inline', 'Common');
         $def->addElement('sub', 'Inline', 'Inline', 'Common');
         $def->addElement('sup', 'Inline', 'Inline', 'Common');
         $def->addElement('mark', 'Inline', 'Inline', 'Common');
         $def->addElement('wbr', 'Inline', 'Empty', 'Core');
+        $def->addElement('rp', 'Inline', 'Inline', 'Common');
+        $def->addElement('rt', 'Inline', 'Inline', 'Common');
 
         // http://developers.whatwg.org/edits.html
         $def->addElement('ins', 'Block', 'Flow', 'Common', array('cite' => 'URI', 'datetime' => 'Text'));
