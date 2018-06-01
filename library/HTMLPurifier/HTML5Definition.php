@@ -24,6 +24,8 @@ class HTMLPurifier_HTML5Definition
         $def->addElement('main', 'Block', 'Flow', 'Common');
 
         // Content model actually excludes several tags, not modelled here
+        $def->addElement('ruby', 'Block', 'Flow', null);
+        $def->addElement('map', 'Block', 'Flow', null);
         $def->addElement('address', 'Block', 'Flow', 'Common');
         $def->addElement('hgroup', 'Block', 'Required: h1 | h2 | h3 | h4 | h5 | h6', 'Common');
 
